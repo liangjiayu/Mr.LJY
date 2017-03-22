@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>hello vue.js</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6">
+            <h1>hello vue</h1>
+            <div id="app1">
+                <!--表格展示部分  -->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <td>序号</td>
+                            <td>书名</td>
+                            <td>作者</td>
+                            <td>价格</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <!--表格渲染部分  -->
+                    <tbody>
+                        <tr v-for="(book,index) in books">
+                            <td>{{book.id}}</td>
+                            <td>{{book.name}}</td>
+                            <td>{{book.anthor}}</td>
+                            <td>{{book.price}}</td>
+                            <td><button type="button" class="btn btn-success" v-on:click="delBook(index)">操作</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right" colspan="5">
+                                <h4>总价{{sumBook}}</h4>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="add-book">
+                    <legend>添加书籍</legend>
+                    <div class="form-group">
+                        <label for="name">书名</label>
+                        <input type="text" class="form-control" v-model="book.name">
+                    </div>
+                    <div class="form-group">
+                        <label for="anthor">作者</label>
+                        <input type="text" class="form-control" v-model="book.anthor">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">价格</label>
+                        <input type="text" class="form-control" v-model="book.price">
+                    </div>
+                    <button type="button" class="btn btn-primary" @click="addBook()">添加</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="hello.js" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js" charset="utf-8"></script>
+        <style media="screen">
+            * {
+                box-sizing: border-box;
+            }
+            .wrap {
+                width: 500px;
+                height: 2000px;
+                margin: 0 auto;
+                margin-top: 200px;
+            }
+            .click {
+                content: "点击我";
+                display: block;
+                padding-left: 10px;
+                background-color: #000;
+                color: #fff;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                transition: all .2s linear;
+                visibility: hidden;
+                height: 0;
+                opacity: 0;
+            }
+            .active {
+                visibility: visible;
+                padding: 15px;
+                height: 135px;
+                opacity: 1;
+            }
+            #go {
+                position: fixed;
+                width: 50px;
+                height: 50px;
+                background-color: #000;
+                right: 100px;
+                bottom: 100px;
+                display: none;
+            }
+            @keyframes oppacity_a {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="section-1">
+                <div class="click">点击我</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.</p>
+            </div>
+            <div class="section-1">
+                <div class="click">点击我</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.</p>
+            </div>
+            <div class="section-1">
+                <div class="click">点击我</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros.</p>
+            </div>
+        </div>
+        <div id="go"></div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="item"><p>hello</p></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>

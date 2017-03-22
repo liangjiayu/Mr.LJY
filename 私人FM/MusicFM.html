@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title></title>
+    	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="font/iconfont.css">
+        <link rel="stylesheet" href="MusicFM.css">
+	    <script src="https://code.jquery.com/jquery-3.1.1.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="music-model">
+            <!--播放器显示控制  -->
+            <div class="music-header">
+                <div class="music-back">
+                    <i class="iconfont icon-skip"></i>
+                </div>
+                <div class="music-song">
+                    <div class="music-title"></div>
+                    <div class="music-singer"></div>
+                </div>
+                <div class="music-menu">
+                    <i class="iconfont icon-category"></i>
+                </div>
+            </div>
+            <!--播放器的声控  -->
+            <div class="music-volume">
+                <i class="iconfont icon-remind"></i>
+                <div class="progress-box">
+                    <div class="progress-bar"></div>
+                </div>
+                <i class="iconfont icon-favorites"></i>
+            </div>
+            <!--播放器的光盘  -->
+            <div class="music-body">
+                <div class="music-body-logo"></div>
+                <div class="music-body-disc">
+                    <img class="music-body-cover img_move" id="music-img">
+                </div>
+            </div>
+            <!--歌曲的数据控制  -->
+            <div class="music-time">
+                <span>1:00</span>
+                <div class="progress-box">
+                    <div class="progress-bar"></div>
+                </div>
+                <span>4:00</span>
+            </div>
+            <!--歌曲播放控制  -->
+            <div class="music-control">
+                <div class="music-prev" id="prev-song">
+                    <i class="iconfont icon-back"></i>
+                </div>
+                <div class="music-stop">
+                    <i class="iconfont icon-iconfontstop"></i>
+                </div>
+                <div class="music-next" id="next-song">
+                    <i class="iconfont icon-more"></i>
+                </div>
+            </div>
+            <div class="music-list">
+                <ul class="list-unstyled">
+                </ul>
+            </div>
+        </div>
+        <audio id="music-src" autoplay></audio>
+        <script src="MusicFM.js" charset="utf-8"></script>
+    </body>
+</html>

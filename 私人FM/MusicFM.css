@@ -1,0 +1,184 @@
+/*播放器头部*/
+.music-model {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("image/2.jpg");
+    background-size: 100% 100%;
+    color: #fff;
+}
+.music-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
+    text-align: center;
+}
+.music-back {
+    margin-left: 2.5vw;
+}
+.music-menu {
+    margin-right: 2.5vw;
+}
+.music-back i,.music-menu i{
+    font-size: 7vw;
+}
+.music-title {
+    font-size: 18px;
+}
+/*播放器头部*/
+
+/*音量条*/
+.music-volume {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    border-bottom: 1px solid #fff;
+}
+.music-volume i {
+    font-size: 6vw;
+}
+.music-volume i:first-child {
+    margin-left: 5vw;
+    margin-right: 1vw;
+}
+.music-volume i:last-child {
+    margin-left: 1vw;
+    margin-right: 5vw;
+}
+.progress-box {
+    width: 72vw;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+}
+/*音量条*/
+
+/*播放器光盘*/
+.music-body {
+    position: relative;
+    height: 69vh;
+}
+.music-body-disc {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60vw;
+    height: 60vw;
+    background-image: url("image/disc-ip6.png");
+    background-size: 100%;
+    text-align: center;
+    line-height: 60vw;
+}
+.music-body-logo {
+    transition: transform .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 18vw;
+    height: 15vh;
+    background-image: url("image/needle.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 5;
+    transform: rotate(0deg);
+    transform-origin: 12px 0;
+}
+.music-body-cover {
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+}
+
+/*播放器光盘*/
+
+/*歌曲的时间*/
+.music-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+}
+.music-time span:first-child {
+    margin-left: 12px;
+    font-size: 18px;
+}
+.music-time span:last-child {
+    margin-right: 12px;
+    font-size: 18px;
+}
+/*歌曲的时间*/
+
+
+/*播放器控制*/
+.music-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+.music-prev {
+    margin-left: 6vw;
+}
+.music-prev i,.music-stop i,.music-next i {
+    font-size: 12vw;
+}
+.music-next {
+    margin-right: 6vw;
+}
+.music-stop i{
+    transition: all .5s;
+}
+/*播放器控制*/
+
+/*歌曲列表*/
+.music-list {
+    display: none;
+    position: absolute;
+    right: 2vw;
+    top: 15vh;
+    width: 24vw;
+    line-height: 2;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+.music-list ul {
+    margin: 0;
+}
+/*歌曲列表*/
+
+/*图片和棒子预留样式*/
+.img_move {
+    animation: cover_move 15s;
+    animation-timing-function: linear; /*动画速度*/
+    animation-iteration-count: infinite; /*动画循环*/
+    animation-fill-mode: forwards; /*动画结束保持的状态*/
+}
+.img_move_active {
+    animation-play-state: running;
+}
+.img_move_stop {
+    animation-play-state: paused;
+}
+.logo-stop {
+    transform: rotate(-25deg);
+}
+/*动画*/
+@keyframes cover_move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,39 @@
+.header {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+}
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-box span a{
+    font-size: 24px;
+    color: red;
+    text-decoration: none;
+}
+.nav-box span a:hover {
+    text-decoration: none;
+}
+
+.main {
+    background-color: #f7f6f8;
+}
+.dir-box {
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.dir-list {
+    padding: 15px;
+}
+.dir-item {
+    font-size: 24px;
+    text-align: center;
+}
+.dir-item a {
+    color: blue;
+}
+.dir-item a:hover {
+    text-decoration: none;
+}

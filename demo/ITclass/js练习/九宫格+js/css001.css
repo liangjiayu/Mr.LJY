@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50vw;
+    height: 42vw;
+    background-color: #fff;
+}
+
+.box {
+    box-sizing: border-box;
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #vue;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+button {
+    width: 15vw;
+    height: 2vw;
+    background-color: #fff;
+    border: 2px solid #D1EEEE;
+    border-radius: 5px;
+    color: #000;
+    outline: 0;
+}
+
+button:first-of-type {
+    margin-right: 7vw;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #D1EEEE;
+}

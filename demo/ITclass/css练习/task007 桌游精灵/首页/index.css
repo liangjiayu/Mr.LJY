@@ -1,0 +1,120 @@
+.header {
+    position: relative;
+    height: 45px;
+    background-color: #34bede;
+}
+
+.box {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 7px;
+    background-color: #fff;
+}
+
+.wrap {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #eff0f1;
+}
+
+.title {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: #a2a3a4;
+}
+
+.title>h3 {
+    font-size: 20px;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 15px;
+    height: 30px;
+    background-image: url("image/多边形 1.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.main {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-bottom: 0;
+}
+
+.main>h3 {
+    font-size: 22px;
+    color: #f8be5d;
+    text-align: center;
+}
+
+.spilt {
+    height: 1px;
+    background-color: #f8be5d;
+}
+
+.box2 {
+    height: 70px;
+    line-height: 70px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #6dd2e9;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tip {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: #8a8b8c;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main>.icon {
+    top: 50%;
+    right: 5px;
+}
+
+.tags {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+.tags li {
+    list-style: none;
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #eff0f1;
+}
+
+.tags>.active {
+    background-color: #6dd1e8;
+}

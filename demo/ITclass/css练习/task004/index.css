@@ -1,0 +1,112 @@
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 8.5px!important;
+    }
+}
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 9.5px!important;
+    }
+}
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 10.5px!important;
+    }
+}
+html {
+    height: 100%;
+    font-size: 8px;
+}
+body {
+    margin: 0;
+    font-family: Arial,Verdana,Sans-serif;
+    line-height: 1.5;
+    height: 100%;
+}
+/*开头样式*/
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #5fc0cd;
+}
+.header>span {
+    padding: 1rem 0;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.header>span:first-child {
+    margin-left: 1rem;
+}
+.header>span:last-child {
+    margin-right: 1rem;
+}
+/*main的样式*/
+.main {
+    box-sizing: border-box;
+    padding-top: 4.5rem;
+    height: 100%;
+    background-color: #eff0f4;
+}
+.number,.password {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 1rem;
+    padding: .5rem;
+    height: 5rem;
+    background-color: #fff;
+}
+.logo-1,.logo-2 {
+    box-sizing: border-box;
+    width: 5rem;
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-size: 1.8rem 2.6rem;
+    background-position: center;
+}
+.logo-1 {
+    background-image: url("image/02.png");
+}
+.logo-2 {
+    background-image: url("image/01.png");
+}
+.bar {
+    width: .2rem;
+    height: 2.7rem;
+    margin-top: .7rem;
+    background-color: #ccc;
+}
+.number>input,.password>input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .6rem 1.2rem;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    color: #000;
+}
+.enter {
+    position: relative;
+    margin-top: 5rem;
+}
+.enter>button {
+    width: 100%;
+    height: 5rem;
+    border: 0;
+    background-color: #5dc0cd;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+.enter>span {
+    position: absolute;
+    right: 1rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #5dc0cd;
+}
