@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.cur-btn-wrap {
+				padding-top: 10px;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left icon-white"></a>
+	    <h1 class="mui-title" id="title">入住登记</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-card">
+			<form action="" class="mui-input-group">
+			<div class="mui-input-row">
+				<label for="">物业</label>
+				<select name="">
+					<option value="">四季酒店</option>
+					<option value="" selected>天河酒店</option>
+					<option value="">蓝天酒店</option>
+				</select>
+			</div>
+			<div class="mui-input-row">
+				<label for="">房号</label>
+				<select name="">
+					<option value="">101</option>
+					<option value="">502</option>
+					<option value="">701</option>
+				</select>
+			</div>
+			<div class="mui-input-row">
+				<label for="">租客</label>
+				<select name="">
+					<option value="">小明</option>
+					<option value="">小城</option>
+					<option value="">小方</option>
+				</select>
+			</div>
+			</form>
+		</div>
+		<div class="cur-btn-wrap">
+			<a href="" class="weui-btn main-bgc">入住</a>
+		</div>
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

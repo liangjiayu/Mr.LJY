@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />    		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			#header {
+				background-color: #5888e4;
+			}
+			#title {
+				color: #fff;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+		<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left icon-white">
+			<span class="mui-icon mui-icon-left-nav"></span>
+			我
+		</button>
+	    <h1 class="mui-title" id="title">设置</h1>
+	</header>
+	<div class="mui-content" id="list">
+		<!--账号安全-->
+   		<div class="weui-cells" style="margin-top: 8px;">
+   			<a class="weui-cell weui-cell_access" href="self-set-password.html">
+   				<div class="weui-cell__bd">登录密码</div>
+   				<div class="weui-cell__ft">修改</div>
+   			</a>
+   		</div>
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true
+			});
+			mui('#list').on('tap','a',function () {
+				var href = this.href;
+				var id = this.href;
+				//游览器
+				if (!mui.os.plus) {
+					window.location.href = href;
+					return;
+				}
+				mui.openWindow({
+					url:href,
+					id:id,
+					styles:{
+						popGesture: "close"
+					},
+					waiting:{
+						autoShow:false
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>

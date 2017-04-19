@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.cur-btn-wrap {
+				padding-top: 10px;
+				margin-left: 7%;
+				margin-right: 7%;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+		<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left icon-white">
+			<span class="mui-icon mui-icon-left-nav"></span>
+			物业
+		</button>
+	    <h1 class="mui-title" id="title">修改物业</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-card">
+			<div class="weui-cells" style="margin-top: 0;">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">四季酒店</div>
+				</div>
+			</div>
+			<form action="" class="mui-input-group">
+				<div class="mui-input-row">
+					<label for="">公寓名字</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入新的公寓名"/>	
+				</div>
+				<div class="mui-input-row">
+					<label for="">手机</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入业主姓名"/>	
+				</div>
+				<div class="mui-input-row">
+					<label for="">手机</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入新的手机"/>	
+				</div>
+				<div class="mui-input-row">
+					<label for="">身份证</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入新的身份证"/>	
+				</div>
+				<div class="mui-input-row">
+					<label for="">邮箱</label>
+					<input type="text" class="mui-input-clear" placeholder="请输入新的邮箱"/>	
+				</div>
+			</form>
+		</div>
+		<div class="cur-btn-wrap">
+			<a href="" class="weui-btn weui-btn_warn">删除物业</a>
+		</div>
+		<div class="cur-btn-wrap">
+			<a href="" class="weui-btn main-bgc">保存</a>
+		</div>
+		
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

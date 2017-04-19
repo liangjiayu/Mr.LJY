@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.cur-btn-wrap {
+				padding-top: 10px;
+				margin-left: 7%;
+				margin-right: 7%;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+		<button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left icon-white">
+			<span class="mui-icon mui-icon-left-nav"></span>
+			取消
+		</button>
+	    <h1 class="mui-title" id="title">添加公寓</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-card">
+		<form class="mui-input-group">
+			<div class="mui-input-row">
+				<label for="">物业名称</label>
+				<input type="text" class="mui-input-clear" placeholder="四季花园"/>
+			</div>
+			<div class="mui-input-row">
+				<label for="">物业地址</label>
+				<input type="text" class="mui-input-clear" placeholder="广州市天河区"/>
+			</div>
+			<div class="mui-input-row">
+				<label for="">姓名</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入业主姓名"/>
+			</div>
+			<div class="mui-input-row">
+				<label for="">手机</label>
+				<input type="number" class="mui-input-clear" placeholder="请输入业主手机号"/>
+			</div>
+			<div class="mui-input-row">
+				<label for="">身份证</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入业主身份证"/>
+			</div>
+		</form>
+		</div>
+		<div class="cur-btn-wrap">
+			<a href="" class="weui-btn main-bgc">提交</a>
+		</div>		
+		
+
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

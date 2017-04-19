@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.icon-set {
+				font-size: 18px;
+				padding-right: 10px;
+			}
+			.icon-plus {
+				font-size: 20px;
+			}
+			.cur-btn-wrap {
+				margin-top: 20px;
+				margin-left: 6%;
+				margin-right: 6%;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left icon-white"></a>
+	    <h1 class="mui-title" id="title">添加房号</h1>
+	</header>
+	<div class="mui-content" id="list">
+		<form class="mui-input-group" style="margin-top: 8px;">
+				<div class="weui-cells" style="margin-top: 0;">
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><div class="weui-label">公寓名称</div></div>
+						<div class="weui-cell__bd">四季酒店</div>
+					</div>
+				</div>
+			<div class="mui-input-row">
+
+				<label for="">房号</label>
+				<input type="text" class="mui-input-clear" placeholder="如 A栋 108"/>
+			</div>
+		</form>
+		<div class="cur-btn-wrap">
+			<a href="javascript:;" class="weui-btn main-bgc">确定</a>
+		</div>
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.cur-hd-img {
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				margin-right: .8em;
+			}
+			.cur-hd-img img {
+				width: 100%;
+				max-height: 100%;
+				vertical-align: top;
+			}
+			.cur-bd-title {
+				font-size: 17px;
+				margin-bottom: 10px;
+			}
+			.cur-bd-p {
+				margin-bottom: 0;
+			}
+			.icon-set {
+				font-size: 18px;
+				padding-right: 10px;
+			}
+			.icon-plus {
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left icon-white"></a>
+	    <h1 class="mui-title" id="title">入住房号</h1>
+	</header>
+	<div class="mui-content" id="list">
+		<!--物业详情列表-->
+		<div class="weui-cells" style="margin-top: 1px;">
+			<div class="weui-cell">
+				<div class="weui-cell__hd cur-hd-img" >
+					<img src="../image/House default.png"/>
+				</div>
+				<div class="weui-cell__bd">
+					<div class="cur-bd-title">四季酒店</div>
+					<p class="cur-bd-p">共2套住宅，闲置2套</p>
+				</div>
+				<div class="weui-cell__ft">
+					<a href="prop-set.html"><span class="fa fa-edit icon-blue icon-set"></span></a>
+				</div>
+			</div>
+		</div>
+		<!--房号列表-->
+		<div class="weui-cells" style="margin-top: 10px;">
+			<a href="prop-rent.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__bd">123</div>
+				<div class="weui-cell__ft"><span class="icon-blue">入住</span></div>
+			</a>
+			<a href="prop-rent.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__bd">456</div>
+				<div class="weui-cell__ft"><span class="icon-blue">入住</span></div>
+			</a>
+			<a href="prop-rent.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__bd">789</div>
+				<div class="weui-cell__ft"><span class="icon-blue">入住</span></div>
+			</a>
+		</div>
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			mui('#list').on('tap','a',function () {
+				var href = this.href;
+				mui.openWindow({
+					url:href,
+					styles:{
+						popGesture: "close"
+					},
+					waiting: {
+						autoShow: false
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>

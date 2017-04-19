@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.cur-hd-img {
+				width: 45px;
+				height: 45px;
+				margin-right: .8em;
+				text-align: center;
+				line-height: 45px;
+			}
+			.cur-hd-img img {
+				width: 100%;
+				max-height: 100%;
+				vertical-align: middle;
+			}
+			.cur-bd-title {
+				color: #000;
+			}
+			.cur-bd-span {
+				display: block;
+				padding-top: 10px;
+				font-size: 14px;
+				color: #000;
+			}
+			.cur-sm-img {
+				width: 45px;
+				height: 45px;
+				margin-right: .3em;
+				text-align: center;
+				line-height: 45px;
+			}
+			.cur-sm-img img{
+				width: 100%;
+				max-height: 100%;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="mui-content" id="list">
+		<div class="weui-cells" style="margin-top: 10px;">
+			<a href="home-prop.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__hd cur-hd-img"><img src="../image/公寓、住宅.png"/></div>
+				<div class="weui-cell__bd">
+					<div>物业</div>
+					<span class="cur-bd-span">2</span>
+				</div>
+			</a>
+		</div>
+		<div class="weui-cells" style="margin-top: 10px;">
+			<a href="home-rent.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__hd cur-hd-img"><img src="../image/合租.png"/></div>
+				<div class="weui-cell__bd">
+					<div>租客</div>
+					<span class="cur-bd-span">2</span>
+				</div>
+			</a>
+		</div>
+		<div class="weui-cells" style="margin-top: 10px;">
+			<div class="weui-cell">
+				<a href="home-room-leave.html" class="weui-cell__hd cur-sm-img"><img src="../image/房号.png" class="cur-flex-img"/></a>
+				<a class="weui-cell__bd" href="home-room-leave.html">
+					<div class="cur-bd-title">闲置房号</div>
+					<span class="cur-bd-span">2</span>
+				</a>
+				<a class="weui-cell__hd cur-sm-img" href="home-room-check.html"><img src="../image/房子.png" class="cur-flex-img"/></a>
+				<a class="weui-cell__bd" href="home-room-check.html">
+					<div class="cur-bd-title">入住房号</div>
+					<span class="cur-bd-span">2</span>
+				</a>
+			</div>						
+		</div>
+        
+		<div class="weui-cells" style="margin-top: 10px;">
+			<a href="javascript:;" class="weui-cell weui-cell_access">
+				<div class="weui-cell__hd cur-hd-img"><img src="../image/报表.png"/></div>
+				<div class="weui-cell__bd">
+					<div>报表查询</div>
+					<span class="cur-bd-span">2</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui('#list').on('tap','a',function () {
+			var href = this.href;
+			var id = this.href;
+			//游览器
+			if (!mui.os.plus) {
+				window.location.href = href;
+				return;
+			}
+			mui.openWindow({
+				url:href,
+				id:id,
+				styles:{
+					popGesture: "close"
+				},
+				waiting:{
+					autoShow:false
+				}
+			})
+		});
+	</script>
+
+</html>

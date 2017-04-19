@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--mui 和 weui -->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/weui.css"/>
+		<!-- font -->
+		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<!--本页样式-->
+		<style type="text/css">
+			.cur-hd-img {
+				width: 45px;
+				height: 45px;
+				margin-right: .8em;
+			}
+			.cur-hd-img img {
+				width: 100%;
+				height: 100%;
+				vertical-align: top;
+				border-radius: 50%;
+			}
+			.cur-bd-title {
+				font-size: 17px;
+				margin-bottom: 5px;
+			}
+			.cur-bd-time {
+				margin-bottom: 0;
+				
+			}
+			.cur-bd-p {
+				margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<!--标题-->
+	<header class="mui-bar mui-bar-nav" id="header">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left icon-white"></a>
+	    <h1 class="mui-title" id="title">租客列表</h1>
+	</header>
+	<div class="mui-content" id="list">
+		<!--租客列表-->
+		<div class="weui-cells">
+			<a href="prop-rent-info.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__hd cur-hd-img">
+					<img src="../image/House default.png" alt=""/>
+				</div>
+				<div class="weui-cell__bd">
+					<div class="cur-bd-title">租客名字</div>
+					<p class="cur-bd-time">2017-4-17至2018-04-16</p>
+				</div>
+				<div class="weui-cell__ft"></div>
+			</a>
+			<a href="prop-rent-info.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__hd cur-hd-img">
+					<img src="../image/House default.png" alt=""/>
+				</div>
+				<div class="weui-cell__bd">
+					<div class="cur-bd-title">租客名字</div>
+					<p class="cur-bd-time">2017-4-17至2018-04-16</p>
+				</div>
+				<div class="weui-cell__ft"></div>
+			</a>
+			<a href="prop-rent-info.html" class="weui-cell weui-cell_access">
+				<div class="weui-cell__hd cur-hd-img">
+					<img src="../image/House default.png" alt=""/>
+				</div>
+				<div class="weui-cell__bd">
+					<div class="cur-bd-title">租客名字</div>
+					<p class="cur-bd-time">2017-4-17至2018-04-16</p>
+				</div>
+				<div class="weui-cell__ft"></div>
+			</a>
+		</div>
+	</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			mui('#list').on('tap','a',function () {
+				var href = this.href;
+				mui.openWindow({
+					url:href,
+					styles:{
+						popGesture: "close"
+					},
+					waiting: {
+						autoShow: false
+					}
+				})
+			});
+		</script>
+	</body>
+
+</html>
